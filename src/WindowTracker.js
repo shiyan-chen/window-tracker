@@ -22,9 +22,9 @@ export default function WindowTracker() {
     }, []);
 
     return (
-        <div>
-            <h1>Window width: {windowSize.windowWidth} px</h1>
-            <h1>Window height: {windowSize.windowHeight} px</h1>
+        <div className="window--size">
+            <div>Window width: {windowSize.windowWidth} px</div>
+            <div>Window height: {windowSize.windowHeight} px</div>
         </div>
     );
 }
