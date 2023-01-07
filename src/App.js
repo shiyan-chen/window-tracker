@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <button onClick={toggle}>{show ? "Hide" : "Show"} WindowTracker</button>
+      <button className="toggle--btn" onClick={toggle}>{show ? "Hide" : "Show"} WindowTracker</button>
       {show && <WindowTracker />}
     </div>
   );
