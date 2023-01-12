@@ -50,10 +50,11 @@ body {
 }
 
 .title {
-  min-width: 250px;
   font-size: 2rem;
   font-weight: bold;
+  text-align: center;
   color: var(--title);
+  white-space: nowrap;
 }
 
 /* text */
