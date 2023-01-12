@@ -14,8 +14,8 @@
 
 [data-theme='dark'] {
   --background: rgb(37, 51, 81);
-  --title: rgb(214, 214, 214);
-  --btn-bg: rgb(214, 214, 214);
+  --title: rgb(229, 229, 229);
+  --btn-bg: rgb(229, 229, 229);
   --btn: rgb(249, 53, 53);
   --opacity: 0;
 }
@@ -31,16 +31,18 @@ body {
 }
 
 .container {
-  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: var(--background);
 }
 
 /* title */
-
 .title-container {
   display: flex;
   align-items: center;
@@ -48,6 +50,7 @@ body {
 }
 
 .title {
+  min-width: 250px;
   font-size: 2rem;
   font-weight: bold;
   color: var(--title);
